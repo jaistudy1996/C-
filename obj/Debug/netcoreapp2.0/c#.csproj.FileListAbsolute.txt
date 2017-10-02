@@ -1,0 +1,10 @@
+/Users/jayantarora/Desktop/Projects/c#/bin/Debug/netcoreapp2.0/c#.deps.json
+/Users/jayantarora/Desktop/Projects/c#/bin/Debug/netcoreapp2.0/c#.runtimeconfig.json
+/Users/jayantarora/Desktop/Projects/c#/bin/Debug/netcoreapp2.0/c#.runtimeconfig.dev.json
+/Users/jayantarora/Desktop/Projects/c#/bin/Debug/netcoreapp2.0/c#.dll
+/Users/jayantarora/Desktop/Projects/c#/bin/Debug/netcoreapp2.0/c#.pdb
+/Users/jayantarora/Desktop/Projects/c#/obj/Debug/netcoreapp2.0/c#.csproj.CoreCompileInputs.cache
+/Users/jayantarora/Desktop/Projects/c#/obj/Debug/netcoreapp2.0/c#.AssemblyInfoInputs.cache
+/Users/jayantarora/Desktop/Projects/c#/obj/Debug/netcoreapp2.0/c#.AssemblyInfo.cs
+/Users/jayantarora/Desktop/Projects/c#/obj/Debug/netcoreapp2.0/c#.dll
+/Users/jayantarora/Desktop/Projects/c#/obj/Debug/netcoreapp2.0/c#.pdb
