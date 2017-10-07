@@ -6,6 +6,7 @@ using Degrees;
 using Students;
 using Teachers;
 using UPrograms;
+using EmployeeTut;
 using System.Collections.Generic;
 
 namespace intro_1
@@ -35,6 +36,7 @@ namespace intro_1
 
             //CarTest();
             uniApp();
+            emplTest();
         }
 
         static double Divide(double firstNumber, double secondNumber){
@@ -75,6 +77,14 @@ namespace intro_1
             Console.WriteLine($"Name of Degree in program is: {uprog.Degree[0].Name}");
             Console.WriteLine($"Name of course in degree is: {uprog.Degree[0].Courses[0].CourseName}");
             Console.WriteLine($"Number of students in this course is: {uprog.Degree[0].Courses[0].students.Count}");
+        }
+
+        static void emplTest(){
+            var employee1 = new Employee("Libby", 2000);
+            var employee2 = new TechnicalEmployee("Zaynah");
+            var employee3 = new BussinessEmployee("Winter");
+
+            Console.WriteLine($"{employee1.employeeStatus()} ... {employee2.employeeStatus()} ... {employee3.employeeStatus()}");
         }
     }
 }
