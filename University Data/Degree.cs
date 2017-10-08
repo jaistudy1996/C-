@@ -13,4 +13,15 @@ namespace Degrees{
             this.Courses = courses;
         }
     }
+
+    class DegreeAbs{
+        public Course course{get; set;}
+        public string Name{get; set;}
+        public List<CourseAbs> Courses{get; set;}
+        
+        public DegreeAbs(string name, List<CourseAbs> courses){
+            this.Name = name;
+            this.Courses = courses;
+        }
+    }
 }

@@ -12,4 +12,14 @@ namespace UPrograms{
             this.Degree = degrees;
         }
     }
+
+    class UProgramAbs{
+        // using list class from system collection generic
+        public List<DegreeAbs> Degree{get; set;}
+        public string Name{get; set;}
+        public UProgramAbs(string name, List<DegreeAbs> degrees){
+            this.Name = name;
+            this.Degree = degrees;
+        }
+    }
 }

@@ -7,6 +7,8 @@ using Students;
 using Teachers;
 using UPrograms;
 using EmployeeTut;
+using EmployeeTutAbs;
+using University_lab2;
 using System.Collections.Generic;
 
 namespace intro_1
@@ -37,6 +39,7 @@ namespace intro_1
             //CarTest();
             uniApp();
             emplTest();
+            uniAppAbs();
         }
 
         static double Divide(double firstNumber, double secondNumber){
@@ -84,7 +87,46 @@ namespace intro_1
             var employee2 = new TechnicalEmployee("Zaynah");
             var employee3 = new BussinessEmployee("Winter");
 
+            var employee1abs = new TechnicalEmployeeAbs("Libby");
+            var employee2abs = new TechnicalEmployeeAbs("Zaynah");
+            var employee3abs = new BussinessEmployeeAbs("Winter");
+
             Console.WriteLine($"{employee1.employeeStatus()} ... {employee2.employeeStatus()} ... {employee3.employeeStatus()}");
+
+            Console.WriteLine($"{employee1abs.employeeStatus()} ... {employee2abs.employeeStatus()} ... {employee3abs.employeeStatus()}");
+        }
+
+        static void uniAppAbs(){
+            StudentAbs student1 = new StudentAbs(name:"student1", age:1);
+            StudentAbs student2 = new StudentAbs(name: "student2", age:2);
+            StudentAbs student3 = new StudentAbs(name: "student3", age:3);
+            Console.WriteLine($"Total students: {Student.totalStudents()}");
+            TeacherAbs teacher1 = new TeacherAbs("teacher1", 1);
+            // ArrayList studArr = new ArrayList(); 
+            List<StudentAbs> studArr = new List<StudentAbs>();
+            studArr.Add(student1);
+            studArr.Add(student2);
+            studArr.Add(student3);
+            List<TeacherAbs> teachArr = new List<TeacherAbs>();
+            teachArr.Add(teacher1);
+            CourseAbs course1 = new CourseAbs(name:"Programming with C#", students:studArr, teachers:teachArr);
+            List<CourseAbs> courseArr = new List<CourseAbs>();
+            courseArr.Add(course1);
+            DegreeAbs degree1 = new DegreeAbs(name:"Bachelor's", courses: courseArr);
+            List<DegreeAbs> degreeArr = new List<DegreeAbs>();
+            degreeArr.Add(degree1);
+            UProgramAbs uprog = new UProgramAbs(name: "Information Technology", degrees: degreeArr);
+            // Console statements;
+            Console.WriteLine($"Name of the program: {uprog.Name}");
+            Console.WriteLine($"Name of Degree in program is: {uprog.Degree[0].Name}");
+            Console.WriteLine($"Name of course in degree is: {uprog.Degree[0].Courses[0].CourseName}");
+            Console.WriteLine($"Number of students in this course is: {uprog.Degree[0].Courses[0].students.Count}");
+
+            // child still stays a child no matter what
+            StudentAbs mystud =  new StudentAbs("test", 2);
+            Person myp = mystud;
+            Console.WriteLine($"{mystud.GetType()}");
+            Console.WriteLine($"{myp.GetType()}");
         }
     }
 }
